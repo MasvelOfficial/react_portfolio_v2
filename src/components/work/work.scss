@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.qualification-list {
+  .item {
+    position: relative;
+    padding-left: 40px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 11px;
+      width: 2px;
+      height: calc(100% - 15px);
+      background-color: $primary-color;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+    &:last-of-type::before {
+      height: calc(100% - 40px);
+    }
+    & > .icon-wrapper {
+      position: absolute;
+      top: 1px;
+      left: 0;
+      color: $primary-color;
+      font-size: 1.5em;
+    }
+    .years .icon-wrapper {
+      color: $grey-color;
+      margin-right: 10px;
+      transform: translateY(2px);
+    }
+  }
+}

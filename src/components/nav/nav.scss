@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+.nav {
+  position: sticky;
+  top: 0;
+  width: var(--nav-size);
+  height: 100vh;
+  z-index: 9;
+  &.d-flex > .item {
+    font-size: 1.75em;
+    &:nth-of-type(1) {
+      width: var(--nav-size);
+      height: var(--nav-size);
+      background-color: $primary-color;
+      color: $black-color;
+    }
+    &:nth-of-type(2) {
+      &.d-flex > .item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--nav-size);
+        height: calc(var(--nav-size) * .75);
+      }
+    }
+    &:nth-of-type(3) a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: var(--nav-size);
+      height: var(--nav-size);
+    }
+  }
+  a {
+    color: $grey-color;
+    transition: color .25s ease;
+    &:hover {
+      color: rgba($white-color, .85);
+    }
+    &.active {
+      color: $primary-color;
+    }
+  }
+  .helper {
+    --arrow-size: 8px;
+    position: relative;
+    &::before {
+      content: attr(data-helper);
+      position: absolute;
+      top: 50%;
+      left: calc(var(--nav-size) + var(--arrow-size));
+      display: flex;
+      align-items: center;
+      background-color: $black-color;
+      color: $white-color;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      border-radius: 5px;
+      padding: 15px 18px 14px 19px;
+      pointer-events: none;
+      transform: translateY(-50%) translateX(15px);
+      opacity: 0;
+      transition: opacity var(--transition-duration) ease .15s, transform var(--transition-duration) ease .15s;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: calc(var(--nav-size) - var(--arrow-size) + 1px);
+      border: var(--arrow-size) solid $black-color;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      pointer-events: none;
+      transform: translateY(-50%) translate(15px);
+      opacity: 0;
+      transition: opacity var(--transition-duration) ease .15s, transform var(--transition-duration) ease .15s;
+    }
+    &:hover {
+      &::before,
+      &::after {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+        transition-delay: 0s;
+      }
+    }
+  }
+}
