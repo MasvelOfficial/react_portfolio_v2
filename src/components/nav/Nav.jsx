@@ -16,7 +16,7 @@ const Nav = ({ onMenuItemClick }) => {
     {to: '/about', title: 'About', icon: <SlUser />},
     {to: '/work', title: 'Qualification', icon: <SlBriefcase />},
     {to: '/portfolio', title: 'Portfolio', icon: <SlEyeglass />},
-    {to: '/', title: 'Q', icon: <SlPhone />},
+    {to: '/contacts', title: 'Contacts', icon: <SlPhone />},
   ]
   return (
     <nav className="nav d-flex flex-direction-column justify-content-between">
@@ -33,7 +33,7 @@ const Nav = ({ onMenuItemClick }) => {
         )}
       </div>
       <div className="item icon-wrapper d-flex justify-content-center align-items-center helper" data-helper="Download CV">
-        <a href="/">
+        <a href="https://drive.google.com/file/d/18WVTRjnKZ5vtm1_aHFefNIQOL64_ZT0W/view" target="_blank" rel="noreferrer">
           <SlCloudDownload />
         </a>
       </div>

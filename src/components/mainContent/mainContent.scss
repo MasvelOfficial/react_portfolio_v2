@@ -10,7 +10,7 @@
     bottom: 0;
     font-size: 25em;
     color: rgba($white-color, .025);
-    pointer-events: none;
+    z-index: -1;
   }
   .loader {
     position: absolute;

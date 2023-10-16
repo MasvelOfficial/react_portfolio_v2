@@ -47,8 +47,34 @@ const About = () => {
         )}
       </div>
       <hr className="mb-50" />
-      <div className="text-wrapper mb-35">
-        <h2>My skills</h2>
+      <div className="text-wrapper">
+        <h2 className="mb-30">My skills</h2>
+        <ul className="disc">
+          <li>html/css</li>
+          <li>adaptive, responsive, cross-browser layout</li>
+          <li>bootstrap</li>
+          <li>chrome dev tools</li>
+          <li>scss/sass</li>
+          <li>vanilla js</li>
+          <li>es6</li>
+          <li>typescript</li>
+          <li>some js libraries</li>
+          <li>css/js animation</li>
+          <li>react</li>
+          <li>bem</li>
+          <li>twig</li>
+          <li>php</li>
+          <li>mysql</li>
+          <li>npm</li>
+          <li>docker</li>
+          <li>grunt/gulp</li>
+          <li>git</li>
+          <li>jira</li>
+          <li>photoshop/figma</li>
+          <li>email newsletter</li>
+          <li>seo</li>
+          <li>ui/ux</li>
+        </ul>
       </div>
     </motion.div>
   )

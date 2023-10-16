@@ -3,6 +3,7 @@ import Home from '../home/Home'
 import About from '../about/About'
 import Work from '../work/Work'
 import Portfolio from '../portfolio/Portfolio'
+import Contacts from '../contacts/Contacts'
 import './mainContent.scss'
 import { BsCodeSlash } from 'react-icons/bs'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -21,6 +22,7 @@ const MainContent = ({ loading }) => {
     {path: '/about', component: <About/>},
     {path: '/work', component: <Work/>},
     {path: '/portfolio', component: <Portfolio/>},
+    {path: '/contacts', component: <Contacts/>},
   ]
   return(
     <div className="main-content">

@@ -3,11 +3,15 @@ import './portfolio.scss'
 import { SlLink } from 'react-icons/sl'
 import tmpl_1 from '../../assets/template_1.jpg'
 import tmpl_2 from '../../assets/template_2.jpg'
+import tmpl_3 from '../../assets/template_3.jpg'
+import tmpl_4 from '../../assets/template_4.jpg'
 
 const Portfolio = () => {
   const templates = [
     {link: 'https://masvelofficial.github.io/template_1', img: tmpl_1},
-    {link: 'https://masvelofficial.github.io/template_2', img: tmpl_2}
+    {link: 'https://masvelofficial.github.io/template_2', img: tmpl_2},
+    {link: 'https://masvelofficial.github.io/template_3', img: tmpl_3},
+    {link: 'https://masvelofficial.github.io/template_4', img: tmpl_4}
   ]
 
   return(

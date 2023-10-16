@@ -102,7 +102,18 @@ p {
 }
 
 ul {
-  list-style: none;
+  color: $grey-color;
+  font-size: 1.125em;
+  line-height: 1.5;
+  &:not(.disc) {
+    list-style: none;
+  }
+  &.disc {
+    padding-left: 20px;
+    li::marker {
+      color: $primary-color;
+    }
+  }
 }
 
 a:hover {

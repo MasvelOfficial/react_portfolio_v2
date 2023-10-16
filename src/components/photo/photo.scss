@@ -5,7 +5,7 @@
   top: 0;
   width: calc(40% - var(--nav-size) / 2);
   height: 100vh;
-  background-image: url('../../assets/IMG_2831.jpg');
+  background-image: url('../../assets/IMG_4685.jpg');
   background-position: center center;
   background-size: cover;
   &::before {
@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba($black-color, .9), transparent, rgba($black-color, .9));
+    background-image: linear-gradient(to bottom, rgba($black-color, .3), transparent, rgba($black-color, .8));
   }
   .content {
     position: absolute;
